@@ -1,9 +1,13 @@
 .PHONY: pdf
 
+COMMAND = sudo pdflatex -output-format=pdf -output-directory=dist document.tex
 pdf:
 	# Removing previous verion
-	mv dis/document.pdf dis/document.pdf.bak | true
-	sudo pdflatex -output-format=pdf -output-directory=dist document.tex
+	mv -f dist/document.pdf dist/document.pdf.bak | true
+	$(COMMAND) 
+	cd dist && bibtex document.aux
+	$(COMMAND)
+	$(COMMAND)
 
 show:
 	open dist/document.pdf
