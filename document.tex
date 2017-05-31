@@ -7,6 +7,7 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage{blindtext}
+\usepackage{natbib}
 \geometry{
 	a4paper,
 	left=20mm,
@@ -15,7 +16,7 @@
 	bottom=10mm,
 }
 \usepackage[utf8]{inputenc}
-\usepackage[english,ukrainian]{babel}
+\usepackage[english,russian,ukrainian]{babel}
 
 \begin{document}
 
@@ -33,7 +34,8 @@
 
 \newpage
 
-\bibliographystyle{ieeetr}
+% \bibliographystyle{ieeetr}
+\bibliographystyle{plainnat}
 \nocite{*}
 \bibliography{../tex/bibliography} 
 
