@@ -11,3 +11,4 @@ sudo tlmgr install abstract
 
 ### Notes
 * The abstract must be specified before the `\maketitle` command
+* [Bibliography types](https://www.sharelatex.com/learn/Bibtex_bibliography_styles)
