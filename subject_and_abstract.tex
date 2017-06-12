@@ -1,15 +1,17 @@
-\documentclass[14pt]{extbook}
+\documentclass[a4paper,14pt]{extarticle}
 \usepackage{times}
 \usepackage{geometry}
 \usepackage{fontspec}
-%\usepackage{ragged2e} %may want to use this one
+%\usepackage{ragged2e} % may want to use this one
 \usepackage[english,russian,ukrainian]{babel}
+\pagenumbering{gobble}
 \geometry{
 	a4paper,
+	% showframe, % to print margins
 	left=20mm,
 	top=20mm,
 	right=15mm,
-	bottom=10mm,
+	bottom=20mm,
 }
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.5}
@@ -17,7 +19,8 @@
 
 \begin{document}
 \begin{flushright}
-\raisebox{-\baselineskip}{\shortstack{\underline{\hspace{1cm}Бегерський Михайло Васильович\hspace{1cm}}\\(\textit{прізвище, ім'я, по батькові студента})}}
+\raisebox{-\baselineskip}{\shortstack{\underline{\hspace{1cm}Бегерський Михайло Васильович\hspace{1cm}}\\
+(\textit{прізвище, ім'я, по батькові студента})}}
 \end{flushright}
 
 \begin{center}
@@ -35,7 +38,8 @@
 
 \newpage
 \begin{flushright}
-\raisebox{-\baselineskip}{\shortstack{\underline{\hspace{1cm}Misha Behersky\hspace{1cm}}\\(\textit{student first name, last name})}}
+\raisebox{-\baselineskip}{\shortstack{\underline{\hspace{1cm}Misha Behersky\hspace{1cm}}\\
+(\textit{student first name, last name})}}
 \end{flushright}
 
 \begin{center}
@@ -53,9 +57,13 @@ Within the Master's dissertation following components were created: architecture
 
 \vspace{4em}
 \begin{center}
-Студент(ка) \raisebox{-\baselineskip}{\shortstack{\underline{\hspace{3cm}}\\(\textit{підпис})}} \raisebox{-\baselineskip}{\shortstack{\underline{\hspace{7cm}}\\(\textit{прізвище, ім'я, по батькові})}}
+\begingroup
+    \fontsize{10pt}{12pt}\selectfont
+Студент(ка) \raisebox{-\baselineskip}{\shortstack{\underline{\hspace{3cm}}\\(\textit{підпис})}}
+\raisebox{-\baselineskip}{\shortstack{\underline{\hspace{7cm}}\\(\textit{прізвище, ім'я, по батькові})}}
 
 Науковий керівник \raisebox{-\baselineskip}{\shortstack{\underline{\hspace{3cm}}\\(\textit{підпис})}} \raisebox{-\baselineskip}{\shortstack{\underline{\hspace{10cm}}\\(\textit{посада, вчене звання, науковий ступінь, прізвище, ініціали})}}
+\endgroup
 \end{center}
 
 \end{document}
