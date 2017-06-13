@@ -1,4 +1,4 @@
-\documentclass[14pt]{article}
+\documentclass[a4paper,14pt]{extarticle}
 \usepackage{graphicx}
 \usepackage{times}
 \usepackage{geometry}
@@ -6,17 +6,26 @@
 \usepackage{amsmath}
 \usepackage{multirow}
 \usepackage{tabularx}
-\usepackage{blindtext}
+\usepackage{fontspec}
 \usepackage{natbib}
+
+% Set languages and fonts
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+\setotherlanguage{english}
+\setotherlanguage{russian}
+\newfontfamily\cyrillicfont{Times New Roman}[Script=Cyrillic]
+\newfontfamily\cyrillicfontsf{Times New Roman}[Script=Cyrillic]
+\newfontfamily{\cyrillicfonttt}{Times New Roman}
+
 \geometry{
 	a4paper,
-	left=20mm,
+	left=30mm,
 	top=20mm,
-	right=15mm,
-	bottom=10mm,
+	right=20mm,
+	bottom=20mm,
 }
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian,ukrainian]{babel}
+\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
 
@@ -42,7 +51,6 @@
 \bibliographystyle{plainnat}
 \nocite{*}
 \bibliography{../tex/bibliography} 
-
 
 
 \end{document}

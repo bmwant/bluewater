@@ -1,6 +1,6 @@
 .PHONY: pdf
 
-COMMAND = sudo pdflatex -output-format=pdf -output-directory=dist document.tex
+COMMAND = sudo lualatex -output-format=pdf -output-directory=dist document.tex
 
 pdf:
 	# Removing previous verion
