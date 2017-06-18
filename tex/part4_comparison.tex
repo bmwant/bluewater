@@ -37,13 +37,13 @@
 Для перевірки відповідності висунутим вимогам було проведено аналіз для кожного окремо висунотого пункту нефункціональних вимог. Для перевірки швидкодії було обрано 5 різних різнорідних вхідних наборів даних (\ref{tab:datasets_performance}).
 
 \begin{table}[h!]
-	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\begin{tabularx}{\textwidth}{|c|X|X|X|X|}
     \hline
     № п/п & Назва & Розмір & Час (мс на рядок) & Точність (validation) \\ \hline
     1 & creditcard.csv & 68.08 MB & versicolor & virginica \\ \hline
-    2 & movie_metadata.csv & 579.78 KB & versicolor & virginica \\ \hline
+    2 & movie\_metadata.csv & 579.78 KB & versicolor & virginica \\ \hline
     3 & mushrooms.csv & 365.24 KB  & versicolor & virginica \\ \hline
-    4 & 77_cancer_proteomes_CPTAC_itraq.csv & 5.41 MB & versicolor & virginica \\ \hline
+    4 & 77\_cancer\_proteomes\_CPTAC\_itraq.csv & 5.41 MB & versicolor & virginica \\ \hline
     5 & menu.csv & 29.29 KB & versicolor & virginica \\
     \hline
     \end{tabularx}
@@ -55,7 +55,7 @@
 Для перевірки точності було обраховано середнє квадратичне відхилення, щоб дізнатися, на скільки в середньому відхиляються індивідуальні значення передбачуваної величини від її середнього значення (\ref{tab:standard_deviation}).
 
 \begin{table}[h!]
-	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\begin{tabularx}{\textwidth}{|c|X|X|}
     \hline
     № п/п & Назва алгоритму & Значення відхилення \\ \hline
     1 & Logistic regression & 0.04082 \\ \hline
@@ -63,7 +63,7 @@
     3 & Gaussian Naive Bayes & 0.05335 \\ \hline
     4 & Support Vector Machines & 0.02511 \\ \hline
     5 & Decision Tree Classifier & 0.04064 \\ \hline
-    6 & K-nearest neighbors & 0.03333 \\ \hline
+    6 & K-nearest neighbors & 0.03333 \\
     \hline
     \end{tabularx}
 \caption{Середнє квадратичне віхилення для досліджуваних алгоритмів} \label{tab:standard_deviation}
