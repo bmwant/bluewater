@@ -8,6 +8,9 @@
 \usepackage{tabularx}
 \usepackage{fontspec}
 \usepackage{natbib}
+\usepackage{ragged2e} % not needed for now
+\usepackage{hyperref} % make table of contents clickable
+\usepackage[nottoc]{tocbibind} % add bibliography to ToC
 
 % Set languages and fonts
 \usepackage{polyglossia}
@@ -18,6 +21,11 @@
 \newfontfamily\cyrillicfontsf{Times New Roman}[Script=Cyrillic]
 \newfontfamily{\cyrillicfonttt}{Times New Roman}
 
+\addto\captionsukrainian{
+  \renewcommand{\bibname}
+    {Список літературних джерел}
+}
+
 \geometry{
 	a4paper,
 	left=30mm,
@@ -25,6 +33,12 @@
 	right=20mm,
 	bottom=20mm,
 }
+
+\hypersetup{
+	colorlinks,
+	allcolors=black,
+}
+
 \renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
@@ -32,8 +46,8 @@
 \title{Метод автоматизованої класифікації текстових даних на основі гібридних моделей}
 \author{Misha Behersky}
 
-
-\maketitle
+\tableofcontents
+\newpage
 
 \include{tex/abstract}
 \include{tex/part1_theory}
@@ -44,13 +58,11 @@
 \include{tex/part6_summary}
 
 % Bibliography:
-
 \newpage
 
 % \bibliographystyle{ieeetr}
 \bibliographystyle{plainnat}
 \nocite{*}
 \bibliography{../tex/bibliography} 
-
 
 \end{document}
