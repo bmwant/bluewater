@@ -4,68 +4,66 @@
 \usepackage{fontspec}
 \geometry{
 	a4paper,
-	left=20mm,
+	left=30mm,
 	top=20mm,
-	right=15mm,
+	right=20mm,
 	bottom=20mm,
 }
-\usepackage[english,russian,ukrainian]{babel}
+\usepackage[english]{babel}
 \renewcommand{\baselinestretch}{1.5}
 \setmainfont{Times New Roman}
 
 \begin{document}
 
-\title{Метод автоматизованої класифікації текстових даних на основі гібридних моделей}
+\title{Method of automatical text classification based on blender models}
 
 \begin{center}
-	\textbf{\uppercase{Реферат}}
+	\textbf{\uppercase{Abstract}}
 \end{center}
 
-\textbf{Актуальність теми} Щодня об'єми даних в мережі зростатють і працювати з ними стає дедалі складніше. На допомогу ручній обробці та аналізу даних приходить автоматизація та класифікація за допомогою алгоритмів машинного навчання. Аналогічно зростає кількість користувачів, що хоче мати доступ до цих даних у зручному форматі, поділеному на категорії та у впорядкованому вигляді. Саме для цього і були розроблені алгоритми класифікації та кластеризації, що допомагають комп'ютеру здійснити дані процеси. З точки зору науковців, що займаються обробкою даних та розробкою алгоритмів класифікації, дані алгоритми є не завжди оптимальними і вимагають додаткових тонких налаштувань для отримання кращих результатів. Отже, цілком логічним є існування попиту на ринку для розробки універсальних підходів, що допоможуть здійснювати класифікацію для різних вхідних даних, широкого кола алгоритмів та найголовніше будуть зрозумілими не тільки для розробника алгоритму, але й для пересічного користувача.
+\textbf{Relevance of the research} We encounter significant increase of data in the global network and processing of that data becoming more and more difficult. There are a lot of machine learning and data classifications algorithms that come to the rescue and help automate manual work and analysis. Amount of users who want to have easier access to that data in unified format is also increases. That is why algorithms for data classification and clusterization have gain their growth. Speaking from the point of data scientiests these algorithms are not the best option in every use case and need to be tuned in order to achieve the best results. Therefore universal methods that will be able to automatically classify various input data have such a high demand on the market. Moreover those algorithms are required to have intuitive implementation not only for the creator of the algorithm but for the users and regular developers too.
 
-\textbf{Об'єктом дослідження} є процес побудови алгоритму універсальної прогностичної моделі.
+\textbf{Object of research} is a process of creating an algorithm to build universal predictive model.
 
-\textbf{Предметом дослідження} є методи побудови прогностичних моделей та алгоритми класифікації даних.
+\textbf{Subject of research} is a set of methods for building predictive models and algorithms of data classification.
 
-\textbf{Мета роботи}: створення нового алгоритму побудови прогностичної моделі, що буде демонструвати точність передбачення не меншу, ніж аналогічні моделі для схожого роду вхідних даних, та мати просту реалізацію.
+\textbf{Project's goal}: developing a new algorithm for predictive model creation that will show the same accuracy as competitors and have simple implementation.
 
-\textbf{Методи дослідження}. В роботі використовуються методи збору даних, методи класифікації текстових даних та статистичні методи.
+\textbf{Methods of research}. There are methods of data mining, data classification techniques and statistical methods in current project.
 
-\textbf{Наукова новизна} роботи полягає в наступному:
+\textbf{Scientific innovation} of the projects includes:
 
 \begin{enumerate}
-	\item Запропоновано підхід, результатом якого є універсальна прогностична модель, що дає змогу абстрагуватися від конкретних реалізацій і використовувати її для тих самих даних з аналогічними показниками точності та кращими показниками швидкодії.
-	\item Наведено процес перетворення будь-якої прогностичної моделі чи деякої композиції моделей для перетворення в універсальну модель.
-	\item Підтверджено значно більші показники швидкодії моделі, розробленої за допомогою даного підходу.
+	\item Universality of a model that allows to eliminate differences between internal implementations of algorithms and use it with the same data not losing the accuracy among with better performance results.
+	\item Process of creation for such a model was developed and generialized for any arbitrary one.
+	\item Permormance of the model develped was confirmed.
 \end{enumerate}
-На даному етапі роботи отриманих даних досить для того, щоб почати використовувати даний підхід для роботи з реальними даними та заміною існуючих алгоритмів.
+On the current state of the projects this approach allows usage of a model on real-world data and might be used as drop-in replacement for existing algorithms.
 
-\textbf{Практична цінність} отриманих в роботі результатів полягає в тому,
-що запропонований метод побудови прогностичної моделі дозволяє збільшити швидкість обробки вхідних даних шляхом використання простіших інструкцій, які значно швидше виконуються процесором. Іншою перевагою є те, що науковці в галузі машинного навчання та обробки даних економлять свій час за рахунок зменшення порогу входження до розуміння внутрішньої структури алгоритму, а також витрачають менше на повторні багатократні запуски того ж алгоритму на різних наборах даних. Аналогічно дана перевага проявляє себе і для звичайних користувачів, що витрачають менше часу на очікування під час запуску даного алгоритму на великого розміру вхідних даних.
+\textbf{Practical value} of the projects is based on the significant increase of the performance when using the model created by the method described. Using model approximation and similar set of cpu instructions can outcome in performance boost. The other advantage allows to decrease average time for data scientiests to spend while examining internal structure of the models and details of algorithm's implementation. Model shows great results on a large datasets too and therefore it will decrease total amount of time when launching multiple times or using it with large data.
 
-\textbf{Апробація роботи}. Основні положення і результати роботи були представлені та обговорювались на IX науковій конференції магістрантів та аспірантів "Прикладна математика та комп’ютинг" ПМК-2017 (Київ,
-19–21 квітня 2017 р.) та опубліковані у збірнику тез за результатами конференції; збір даних та їх попередня обробка, а також розміщення проміжних результатів було здійснено на веб-ресурсі kpidata.org (жовтень 2015 - до сьогоднішнього дня); доступ до вхідних даних опитування розміщено для вільного користування в онлайн-режимі github.com/kpidata/datasets.
+\textbf{Project's approbation}. Main ideas and summary for the projects were presented and discussed during The IX annual scientific conference "Applied math and computing" and has been published in corresponding set of theses. Data mining and its preprocessing as well as publishing of the results has been made on the web-resource kpidata.org; access to the input data is free and data is stored under version control system on the GitHub (github.com/kpidata/datasets).
 
-\textbf{Структура та обсяг роботи}. Магістерська дисертація складається з вступу, п'яти розділів, висновків та додатків.
+\textbf{Project's structure}. Master's dissertation consists of introduction, five sections, summary and appendix.
 
-\underline{У вступі} надано загальну характеристику роботи, виконано оцінку поточного стану проблеми, обґрунтовано актуальність напрямку досліджень.
+\underline{Introduction} shows general overview of the project, description of the current state for the problem and shows the relevance of such a topic of research. 
 
-\underline{У першому розділі} розглянуто теоретичні відомості, існуючі алгоритми класифікації текстових даних, наведено математичні основи, що використовуються для побудови моделей. Розглянуті загальні підходи до автоматизованої класифікації текстових даних та поширені алгоритми, що застосовуються в даній галузі. Основну увагу приділено всьому процесу обробки даних: від їх початкового збору до безпосереднього застосування прогностичної моделі.
+\underline{First section} describes theoretical background, current set of algorightms that are used for text classification, mathematical background for those methods and algorithms for predictive models creation. General approaches that are used for text classification have been overviewed. Main point of the section is a process of data mining starting from initial collection of data and resulting in usage of predictive model.
 
-\underline{У другому розділі} розглянуто платформу, яка надає можливості для спрощення операцій рефакторингу; проведено огляд типів індексів, які дозволяють пришвидшити операцію пошуку; запропоновано метод рефакторингу структури бази даних для підвищення швидкодії обробки запитів вибірки; описано архітектуру компонентів та технології, обрані для реалізації проекту; наведено вхідні дані та результати роботи методу, надано відповідні ілюстративні матеріали; зазначено перелік та детальний опис кроків методу.
+\underline{Second section} contains analysis of existing algorithms and research of their internal implementation was made. Advantages and disadvantages of each class of algorithms was showed and fields for their application were described. List of requirements for the resulting algorithm was created and then suggested a ways for both optimization and improvement. Influence of the changes on the resulting model was inspected and then necessity of making these changes was confirmed.
 
-\underline{У третьому розділі} запропоновано засоби реалізації для кожного з етапів методу; наведено огляд архітектурних підходів до організації програмного забезпечення; обґрунтувано вибір мікросервісної архітектури; запропоновано структуру та особливості реалізації кожного з мікросервісів, наведено відповідні графічні матеріали, що ілюструють взаємодію елементів системи.
+\underline{Third section} shows implementation of every stage for the method described; architecture and design solution for the resulting software are discussed; usage of microservices approach is justified; structure and internal implementation of each microservice is provided as well as charts and diagrams that shows interaction between components of the system.
 
-\underline{У четвертому розділі} наведено результати роботи алгоритму, підтверджено на практиці гіпотезу про те, що застосування розробленого алгоритму надає виграш у швидкодії; отримано підтвердження того, що використання однорідних інструкцій дозволяє зменшити витрати ресурсів процесора; здійснено порівняння точності та швидкості роботи з існуючими алгоритмами; зроблено висновок щодо можливості застосування даного підходу для використання з різними алгоритмами та вхідними даними для вирішення задачі класифікації; запропоновано шляхи покращення та вектори розвитку для подальшої роботи.
+\underline{Forth section} provides results of algorithm usage and significant performance increase was confirmed. Confirmation for the advantages of usage of homogeneous cpu instructions has been made. The comparison of accuracy and performance for the developed algorithm and its competitors was conducted. Ways for the future development and improvement were suggested.
 
-\underline{У п'ятому розділі} подано аналіз програмного продукту, його оцінку та перспективи для виходу на ринок. Наведені слабкі та сильні сторони проекту, порівняння з аналогами та конкурентоспроможність. Проведено оцінку розміру необхідних інвестицій, обсягу ресурсів, що потрібно залучити та показників прибутку за умови подальшої комерціалізації проекту.
+In \underline{fifth section} analysis of software is provided as well as general estimation and possibilities to join a market. Strong and weak sides of the project are highlighted and comparison with competitors is made. Estimation of investments amount and the amount of resources that need to be invoked for the successful results has been made.
 
-\underline{У висновках} проаналізовано отримані результати роботи.
+\underline{Summary} briefly overviews achieved results and highlights key features of the work done.
 
-\underline{У додатках} наведено фрагменти програмної реалізації запропонованого способу та копії графічних матеріалів.
+\underline{Appendix} consists of significant source code snippets and code for the main modules.
 
-Робота виконана на  80 аркушах, містить 2 додатки та посилання на список використаних літературних джерел з 30 найменувань. У роботі наведено 14 рисунків та 4 таблиці.
+The project consists of 92 pages, has 1 additional code listing, references with 20 entries, 14 figures and 24 tables.
 
-\textbf{Ключові слова}: класифікація, прогностичні моделі, апроксимація моделі, датасет, машинне навчання.
+\textbf{Keywords}: classification, predictive models, model approximation, dataset, machine learning.
 
 \end{document}
