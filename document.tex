@@ -9,13 +9,26 @@
 \usepackage{longtable}
 \usepackage{fontspec}
 \usepackage{natbib}
-\usepackage{float}
+\usepackage{float} % to position tables exactly in text
+\usepackage{fancyhdr} % to set custom page numbering style
 \usepackage{ragged2e} % not needed for now
 \usepackage{hyperref} % make table of contents clickable
 \usepackage[nottoc]{tocbibind} % add bibliography to ToC
+\usepackage{polyglossia}
+
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhf{}
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+\fancyheadoffset{0cm}
+\renewcommand{\headrulewidth}{0pt}
+\setcounter{page}{2} % start from second page because of title one
 
 % Set languages and fonts
-\usepackage{polyglossia}
 \setdefaultlanguage{ukrainian}
 \setotherlanguage{english}
 \setotherlanguage{russian}
@@ -34,6 +47,7 @@
 	top=20mm,
 	right=20mm,
 	bottom=20mm,
+	showframe, % to print margins
 }
 
 \hypersetup{
